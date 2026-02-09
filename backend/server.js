@@ -3,7 +3,7 @@ import mongoDb from "./db.js";
  
 import bookingRoute from "./routes/bookingRoute.js";
 
-const PORT = 5000;
+const PORT = your port;
 
 
 const app = express();

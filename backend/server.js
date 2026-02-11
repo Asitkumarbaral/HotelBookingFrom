@@ -1,9 +1,10 @@
 import express from "express";
 import mongoDb from "./db.js";          
 import cors from "cors";
+import "dotenv/config";
 import bookingRoute from "./routes/bookingRoute.js";
 
-const PORT = your port;
+const PORT = process.env.PORT || 5000;
 
 
 const app = express();

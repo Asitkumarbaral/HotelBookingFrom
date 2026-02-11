@@ -1,5 +1,6 @@
 import mongoose from "mongoose"
-const mongoDb=mongoose.connect("mongodb+srv://dbname:dbpassword@cluster0.iw0ft5t.mongodb.net/dbname?retryWrites=true&w=majority&appName=Cluster0"
+import "dotenv/config";
+const mongoDb=mongoose.connect(process.env.MONGODB_URI
 ).then(()=>{
     console.log("connected to database")
 }).catch((err)=>{

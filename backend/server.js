@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 5000;
 const app = express();
  mongoDb;
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://hotel-booking-from-last.onrender.com"
+}));
 app.use("/api/bookings",bookingRoute);
 
 app.listen(PORT, () => {

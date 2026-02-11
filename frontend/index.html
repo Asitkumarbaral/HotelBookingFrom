@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxuryStay Hotel Booking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">StaySafe</div>
+
+        <nav class="nav" id="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Rooms</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            ☰
+        </div>
+    </header>
+
+ 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Book Your Perfect Stay</h1>
+            <p>Comfort • Luxury • Best Experience</p>
+        </div>
+    </section>
+
+   
+    <section class="booking-section">
+        <div class="form-card">
+            <h2>Hotel Booking Form</h2>
+        
+            <form id="bookingForm">
+
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date *</label>
+                    <input type="date" id="checkIn" required />
+                    <small class="error" id="checkInError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date *</label>
+                    <input type="date" id="checkOut" required />
+                    <small class="error" id="checkOutError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type *</label>
+                    <select id="roomType" required>
+                        <option value="">Select Room Type</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Suite">Suite</option>
+                    </select>
+                    <small class="error" id="roomError"></small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults *</label>
+                        <input type="number" id="adults" min="1" value="1" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <input type="number" id="children" min="0" value="0" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">
+                        Special Requests
+                        <span class="info" title="Optional field for additional preferences.">ⓘ</span>
+                    </label>
+                    <textarea id="specialRequests" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Book Now</button>
+
+                <div id="successMessage" class="success"></div>
+            </form>
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>StaySafe</h3>
+                <p>Experience comfort and elegance like never before.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <p>Home</p>
+                <p>Rooms</p>
+                <p>Contact</p>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>Email: info@luxurystay.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 StaySafe. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

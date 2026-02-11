@@ -1,0 +1,20 @@
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f6f9;
+}
+
+.success-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.success-card h1 {
+    color: #1cc88a;
+    margin-bottom: 15px;
+}
